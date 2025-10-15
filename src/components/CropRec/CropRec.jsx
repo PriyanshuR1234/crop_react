@@ -15,14 +15,14 @@ import {
 // --- Environment Variables & Constants ---
 
 const firebaseConfig = {
-    apiKey: "AIzaSyD-7cxvvnMeGhNHiOB876KBTy_ylbv3lDM",
-    authDomain: "temperature-and-humidity-72e76.firebaseapp.com",
-    databaseURL: "https://temperature-and-humidity-72e76-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "temperature-and-humidity-72e76",
-    storageBucket: "temperature-and-humidity-72e76.appspot.com",
-    messagingSenderId: "594699487611",
-    appId: "1:594699487611:web:ea0dd066372e30fb8595de",
-    measurementId: "G-94Q0S5JY0Q"
+    apiKey            : import.meta.env.VITE_FIREBASE_API_KEY,               //        "AIzaSyD-7cxvvnMeGhNHiOB876KBTy_ylbv3lDM",
+    authDomain        : import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,            //        "temperature-and-humidity-72e76.firebaseapp.com",
+    databaseURL       : import.meta.env.VITE_FIREBASE_DATABASE_URL,            //        "https://temperature-and-humidity-72e76-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId         : import.meta.env.VITE_FIREBASE_PROJECT_ID,               //        "temperature-and-humidity-72e76",
+    storageBucket     : import.meta.env.VITE_FIREBASE_STORAGE_BUCKET ,          //        "temperature-and-humidity-72e76.appspot.com",
+    messagingSenderId : import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID ,     //         "594699487611",
+    appId             : import.meta.env.VITE_FIREBASE_APP_ID ,                  //        "1:594699487611:web:ea0dd066372e30fb8595de",
+    measurementId     : import.meta.env.VITE_FIREBASE_MEASUREMENT_ID         //        "G-94Q0S5JY0Q"
 };
 
 const initialAuthToken = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
